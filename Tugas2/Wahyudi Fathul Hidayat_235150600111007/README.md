@@ -7,7 +7,7 @@ NIM  : 235150600111007
 ## 📤 Submission
 
 1. Folder Analisis Percobaan : [Analisis Percobaan](https://github.com/WahyuEnak/WAHYU-PBO-PTI-A/tree/3d892ed3d15dcb839580149aadc0b743909a6d59/Tugas2/Wahyudi%20Fathul%20Hidayat_235150600111007/Analisis%20Percobaan)
-2. Folder Tugas Praktikum : [Tugas Praktikum](./Tugas%20Praktikum/)
+2. Folder Tugas Praktikum : [Tugas Praktikum](https://github.com/WahyuEnak/WAHYU-PBO-PTI-A/tree/3d892ed3d15dcb839580149aadc0b743909a6d59/Tugas2/Wahyudi%20Fathul%20Hidayat_235150600111007/Tugas%20Praktikum)
 
 ### Gunakan tempalate dibawah apabila pengerjaan bagian tugas praktikum merupakan aplikasi interaktif, dan hapus kode baris ini, hapus template berikut beserta kata baris ini apabila tugas praktikum bukan aplikasi interaktif
 
