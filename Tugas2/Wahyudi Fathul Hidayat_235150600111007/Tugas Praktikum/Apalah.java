@@ -14,21 +14,21 @@ class Buku {
     String judul;
     Penulis penulis;
     Kategori kategori;
-    boolean sudahDibeli;
+    boolean sudahDipinjam;
 
     public Buku(String judul, Penulis penulis, Kategori kategori) {
         this.judul = judul;
         this.penulis = penulis;
         this.kategori = kategori;
-        this.sudahDibeli = false;
+        this.sudahDipinjam = false;
     }
 
-    public boolean isSudahDibeli() {
-        return sudahDibeli;
+    public boolean isSudahDipinjam() {
+        return sudahDipinjam;
     }
 
-    public void setSudahDibeli(boolean sudahDibeli) {
-        this.sudahDibeli = sudahDibeli;
+    public void setSudahDipinjam(boolean sudahDipinjam) {
+        this.sudahDipinjam = sudahDipinjam;
     }
 }
 
@@ -59,7 +59,7 @@ class User {
 
     public void tambahBuku(Buku buku) {
         this.keranjang.add(buku);
-        buku.setSudahDibeli(true); // Tandai buku sebagai sudah dibeli
+        buku.setSudahDipinjam(true); // Tandai buku sebagai sudah dibpinjam
     }
 }
 
@@ -69,7 +69,7 @@ public class Apalah {
 
     public static void main(String[] args) {
         // Menambahkan pengguna
-        users.add(new User("admin", "admin123"));
+        users.add(new User("aselole", "icikiwir"));
 
         // Menambahkan buku-buku
         tambahBuku();
@@ -102,7 +102,7 @@ public class Apalah {
         Scanner scanner = new Scanner(System.in);
         int pilihan;
         do {
-            System.out.println("\nMenu:");
+            System.out.println("Menu:");
             System.out.println("1. Cari Buku");
             System.out.println("2. Lihat Keranjang");
             System.out.println("3. Keluar");
@@ -136,7 +136,7 @@ public class Apalah {
                 System.out.println("Judul: " + buku.judul);
                 System.out.println("Penulis: " + buku.penulis.nama);
                 System.out.println("Kategori: " + buku.kategori.nama);
-                if (!buku.isSudahDibeli()) {
+                if (!buku.isSudahDipinjam()) {
                     System.out.println("Apakah Anda ingin meminjam buku ini? (y/n)");
                     String jawaban = scanner.nextLine();
                     if (jawaban.equalsIgnoreCase("y")) {
