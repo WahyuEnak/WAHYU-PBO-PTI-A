@@ -275,41 +275,5 @@ public class Apalah {
         semuaBuku.add(buku33);
         semuaBuku.add(buku34);
         semuaBuku.add(buku35);
-
-
-        teknologi.tambahBuku(buku1);
-        teknologi.tambahBuku(buku2);
-        filsafat.tambahBuku(buku3);
-        sejarah.tambahBuku(buku4);
-        agama.tambahBuku(buku5);
-        psikologi.tambahBuku(buku6);
-        politik.tambahBuku(buku7);
-        fiksi.tambahBuku(buku8);
-        fiksi.tambahBuku(buku9);
-        fiksi.tambahBuku(buku10);
-        fiksi.tambahBuku(buku11);
-        fiksi.tambahBuku(buku12);
-        fiksi.tambahBuku(buku13);
-        fiksi.tambahBuku(buku14);
-        fiksi.tambahBuku(buku15);
-        fiksi.tambahBuku(buku16);
-        fiksi.tambahBuku(buku17);
-        fiksi.tambahBuku(buku18);
-        fiksi.tambahBuku(buku19);
-        fiksi.tambahBuku(buku20);
-        fiksi.tambahBuku(buku21);
-        fiksi.tambahBuku(buku22);
-        fiksi.tambahBuku(buku23);
-        fiksi.tambahBuku(buku24);
-        fiksi.tambahBuku(buku25);
-        fiksi.tambahBuku(buku26);
-        fiksi.tambahBuku(buku27);
-        fiksi.tambahBuku(buku28);
-        fiksi.tambahBuku(buku29);
-        fiksi.tambahBuku(buku30);
-        fiksi.tambahBuku(buku31);
-        fiksi.tambahBuku(buku32);
-        fiksi.tambahBuku(buku33);
-        fiksi.tambahBuku(buku34);
     }
 }
