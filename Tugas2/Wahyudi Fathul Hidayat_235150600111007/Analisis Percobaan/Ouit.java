@@ -1,29 +1,34 @@
-public class BukuTulis {
-    private int jumlahHalaman;
-    private int kataPerHari;
+import java.util.Scanner;
 
-    // Constructor
-    public BukuTulis(int jumlahHalaman, int kataPerHari) {
-        this.jumlahHalaman = jumlahHalaman;
+class Mahasiswa {
+    int kataPerHari; // dalam kata per hari
+
+    public Mahasiswa(int kataPerHari) {
         this.kataPerHari = kataPerHari;
     }
 
-    // Method untuk menghitung berapa lama menghabiskan satu buku
-    public double hitungDurasi() {
-        int totalSetengahHalaman = jumlahHalaman * 2; // Setiap halaman memiliki dua setengah halaman
-        int totalKata = totalSetengahHalaman * 100; // Setiap setengah halaman setara dengan 100 kata
-        int hariDiperlukan = totalKata / kataPerHari;
-        return hariDiperlukan;
+    public double hitungWaktuHabiskan(int lembarBuku) {
+        int totalKata = lembarBuku * 2 * 100;
+        double totalHari = (double) totalKata / kataPerHari;
+        return totalHari;
     }
+}
 
-    // Method untuk mencetak hasil
-    public void cetakHasil() {
-        double durasi = hitungDurasi();
-        System.out.println("Mahasiswa A memerlukan sekitar " + durasi + " hari untuk menulis satu buku.");
-    }
-
+public class Ouit {
     public static void main(String[] args) {
-        BukuTulis buku = new BukuTulis(50, 100); // Buku berisi 50 lembar, 100 kata per hari
-        buku.cetakHasil();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Masukkan kata per hari: ");
+        int kataPerHari = scanner.nextInt();
+
+        Mahasiswa mahasiswaA = new Mahasiswa(kataPerHari);
+
+        System.out.println("Masukkan jumlah halaman buku: ");
+        int jumlahHalaman = scanner.nextInt();
+
+        double waktuHabiskan = mahasiswaA.hitungWaktuHabiskan(jumlahHalaman);
+        System.out.println("Mahasiswa akan menghabiskan satu buku dalam " + waktuHabiskan + " hari.");
+
+        scanner.close();
     }
 }
