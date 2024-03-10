@@ -1,17 +1,15 @@
 import java.util.Scanner;
 
 class Mahasiswa {
-    String nama;
-    int kecepatanMenulis; // dalam kata per hari
+    int kataPerHari; // dalam kata per hari
 
-    public Mahasiswa(String nama, int kecepatanMenulis) {
-        this.nama = nama;
-        this.kecepatanMenulis = kecepatanMenulis;
+    public Mahasiswa(int kataPerHari) {
+        this.kataPerHari = kataPerHari;
     }
 
-    public double hitungWaktuHabiskan(int jumlahHalaman) {
-        int totalKata = jumlahHalaman * 2 * 100;
-        double totalHari = (double) totalKata / kecepatanMenulis;
+    public double hitungWaktuHabiskan(int lembarBuku) {
+        int totalKata = lembarBuku * 2 * 100;
+        double totalHari = (double) totalKata / kataPerHari;
         return totalHari;
     }
 }
@@ -20,19 +18,16 @@ public class Ouit {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Masukkan nama mahasiswa: ");
-        String namaMahasiswa = scanner.nextLine();
-
         System.out.println("Masukkan kata per hari: ");
-        int kecepatanMenulis = scanner.nextInt();
+        int kataPerHari = scanner.nextInt();
 
-        Mahasiswa mahasiswaA = new Mahasiswa(namaMahasiswa, kecepatanMenulis);
+        Mahasiswa mahasiswaA = new Mahasiswa(kataPerHari);
 
         System.out.println("Masukkan jumlah halaman buku: ");
         int jumlahHalaman = scanner.nextInt();
 
         double waktuHabiskan = mahasiswaA.hitungWaktuHabiskan(jumlahHalaman);
-        System.out.println(mahasiswaA.nama + " akan menghabiskan satu buku dalam " + waktuHabiskan + " hari.");
+        System.out.println("Mahasiswa akan menghabiskan satu buku dalam " + waktuHabiskan + " hari.");
 
         scanner.close();
     }
