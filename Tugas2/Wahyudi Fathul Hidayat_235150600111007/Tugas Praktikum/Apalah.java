@@ -155,18 +155,17 @@ public class Apalah {
 
     public static void beliBuku(Buku buku) {
         for (User user : users) {
-            if (user.username.equals("admin")) {
+            if (user.username.equals("aselole")) {
                 user.tambahBuku(buku); // Tambahkan buku ke keranjang
                 System.out.println("Buku telah ditambahkan ke keranjang.");
                 return;
             }
         }
-        System.out.println("Pengguna tidak ditemukan.");
     }
 
     public static void lihatKeranjang() {
         for (User user : users) {
-            if (user.username.equals("admin")) {
+            if (user.username.equals("aselole")) {
                 System.out.println("Isi Keranjang:");
                 if (user.keranjang.isEmpty()) {
                     System.out.println("Keranjang kosong.");
