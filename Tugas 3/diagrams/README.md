@@ -15,4 +15,4 @@ dst
 
 ## 🔗 Link Penjelasan Tugas
 
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
+https://youtu.be/g1pkuuZOZXY?si=dxEq6rzoKodp7l_x
