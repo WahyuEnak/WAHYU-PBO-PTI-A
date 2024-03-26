@@ -1,5 +1,4 @@
 class Bike {
-    
     String merk;
     String jenisMotor;
     int jumlahGigi;
@@ -21,9 +20,19 @@ class Bike {
         this.nganter = nganter;
 
     }
+     // Method overloading dengan irit (1)
+    public void irit() {
+        System.out.println("Motor ini sedang berjalan dengan irit!");
+    }
 
-    public void irit () {
-        System.out.println(merk + " adalah pabrikan motor paling irit untuk saat ini");
+    // Method overloading dengan irit (2)
+    public void irit(int kecepatan) {
+        System.out.println("Motor ini berjalan irit dengan kecepatan " + kecepatan + " km/jam!");
+    }
+
+    // Method overloading dengan irit (3)
+    public void irit(int ccMesin, int kecepatan) {
+        System.out.println("Motor dengan mesin " + ccMesin + "cc berjalan irit dengan kecepatan " + kecepatan + " km/jam!");
     }
 
     public void balapan () {
@@ -54,6 +63,8 @@ public class Motor {
         Bike Motorcuy = new Bike("Honda", "Sport Fairing", 1, 1000, "Malang", "Adit" );
 
         Motorcuy.irit();
+        Motorcuy.irit(120);
+        Motorcuy.irit(1000, 250);
         Motorcuy.balapan();
         Motorcuy.nanjak();
         Motorcuy.ngebut();
