@@ -1,10 +1,10 @@
 public class Mobil {
-    
+
     String merk;
     String jenisMobil;
     int ccMesin;
     String tempat;
-    
+
     // Konstruktor overload pertama
     public Mobil(String merk) {
         this.merk = merk;
@@ -23,7 +23,20 @@ public class Mobil {
         this.ccMesin = ccMesin;
         this.tempat = tempat;
     }
+    // Method overloading dengan ngebut (1)
+    public void ngebut() {
+        System.out.println("Mobil ini sedang ngebut!");
+    }
 
+    // Method overloading dengan ngebut (2)
+    public void ngebut(int kecepatan) {
+        System.out.println("Mobil ini ngebut dengan kecepatan " + kecepatan + " km/jam!");
+    }
+
+    // Method overloading dengan ngebut (3)
+    public void ngebut(String lokasi, int kecepatan) {
+        System.out.println("Mobil ini ngebut di " + lokasi + " dengan kecepatan " + kecepatan + " km/jam!");
+    }
     
     // Method Overload Pertama
     public void jalan(String peruntukan) {
@@ -46,7 +59,7 @@ public class Mobil {
         else
             System.out.println(jenisMobil + " " + merk + " adalah mobil dengan dua roda penggerak");
     }
-    
+
     // Method yang mengembalikan tipe data class itu sendiri
     public Mobil getMobilInstance() {
         return this;
