@@ -1,10 +1,22 @@
 import java.text.NumberFormat;
 import java.util.Locale;
 
-// Abstract class Kue
-abstract class KueCoy{
-    String nama;
-    double harga;
+abstract class KueCoy {
+    private String nama;
+    private double harga;
+
+    public KueCoy(String nama, double harga) {
+        this.nama = nama;
+        this.harga = harga;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public double getHarga() {
+        return harga;
+    }
 
     abstract double hitungHarga();
 
