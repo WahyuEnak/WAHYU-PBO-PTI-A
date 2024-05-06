@@ -1,14 +1,16 @@
-// Subclass KueJadi
 class KueJadi extends KueCoy {
-    double jumlah;
+    private double jumlah;
 
-    KueJadi(String nama, double harga, double jumlah) {
-        this.nama = nama;
-        this.harga = harga;
+    public KueJadi(String nama, double harga, double jumlah) {
+        super(nama, harga);
         this.jumlah = jumlah;
     }
 
     double hitungHarga() {
-        return harga * jumlah * 2;
+        return getHarga() * jumlah * 2;
+    }
+
+    public double getJumlah() {
+        return jumlah;
     }
 }
