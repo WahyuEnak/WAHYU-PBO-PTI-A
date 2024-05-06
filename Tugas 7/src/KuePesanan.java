@@ -1,14 +1,12 @@
-// Subclass KuePesanan
 class KuePesanan extends KueCoy {
-    double berat;
+    private double berat;
 
-    KuePesanan(String nama, double harga, double berat) {
-        this.nama = nama;
-        this.harga = harga;
+    public KuePesanan(String nama, double harga, double berat) {
+        super(nama, harga);
         this.berat = berat;
     }
 
     double hitungHarga() {
-        return harga * berat;
+        return getHarga() * berat;
     }
 }
