@@ -34,7 +34,7 @@ public class Main {
         kueArray[23] = new KueBasi("Kue Mamah Aku Takut", 15000.0, 3);
         kueArray[24] = new KueBasi("Kue Pembohonk Publik", 15000.0, 3);
 
-        int choice;
+        int pilihan;
         do {
             System.out.println("Menu:");
             System.out.println("1. Tampilkan Semua Kue");
@@ -43,9 +43,9 @@ public class Main {
             System.out.println("0. Keluar");
 
             System.out.print("Pilih menu: ");
-            choice = scanner.nextInt();
+            pilihan = scanner.nextInt();
 
-            switch (choice) {
+            switch (pilihan) {
                 case 1:
                     System.out.println("Semua Kue:");
                     for (KueCoy kue : kueArray) {
@@ -78,7 +78,7 @@ public class Main {
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
-        } while (choice != 0);
+        } while (pilihan != 0);
 
         scanner.close();
     }
